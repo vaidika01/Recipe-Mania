@@ -1,6 +1,6 @@
-# Dish Diary
+# Recipe Mania (Dish Diary)
 
-Dish Diary is a recipe management application that allows users to add, update, and delete their favourite recipes. Users can log in, save their recipes, and easily organize their dish notes, ingredients, preparation instructions, and even upload images of their recipes.
+Recipe Mania is a recipe management application that allows users to add, update, and delete their favourite recipes. Users can log in, save their recipes, and easily organize their dish notes, ingredients, preparation instructions, and even upload images of their recipes.
 
 ## Features
 
@@ -22,30 +22,30 @@ Here are some screenshots of the application:
 
 ### Home Page
 
-![Home1]
+![Home1](https://github.com/vaidika01/Recipe-Mania/blob/master/frontend/img/Screenshot%202025-01-17%20221234.png)
 
-![Home2]
+![Home2](https://github.com/vaidika01/Recipe-Mania/blob/master/frontend/img/Screenshot%202025-01-17%20221311.png)
 
 ### Register Page
 
-![Register]
+![Register](https://github.com/vaidika01/Recipe-Mania/blob/master/frontend/img/Screenshot%202025-01-17%20221637.png)
 
 ### Login Page
 
-![Login]
+![Login](https://github.com/vaidika01/Recipe-Mania/blob/master/frontend/img/Screenshot%202025-01-17%20221618.png)
 
 ### Recipes Page
 
-![Recipes]
+![Recipes](https://github.com/vaidika01/Recipe-Mania/blob/master/frontend/img/Screenshot%202025-01-17%20221557.png)
 
 ### Recipe Page
 
-![Recipe]
+![Recipe](https://github.com/vaidika01/Recipe-Mania/blob/master/frontend/img/Screenshot%202025-01-17%20221335.png)
 
 ### Add Page
 
-![AddRecipes]
+![AddRecipes](https://github.com/vaidika01/Recipe-Mania/blob/master/frontend/img/Screenshot%202024-08-15%20001322.png)
 
 ### Edit Page
 
-![EditRecipes]
+![EditRecipes](https://github.com/vaidika01/Recipe-Mania/blob/master/frontend/img/Screenshot%202024-08-15%20001237.png)
