@@ -11,7 +11,7 @@ const app = express();
 
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
-app.use(cors({ origin: "http://localhost:3000" }));
+app.use(cors({ origin: "https://recipe-mania-frontend.onrender.com" }));
 
 app.use(bodyParser.json());
 
