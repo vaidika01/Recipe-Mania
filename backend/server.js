@@ -11,12 +11,22 @@ const app = express();
 
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
-app.use(cors({ origin: "https://recipe-mania-frontend.onrender.com" }));
+const allowedOrigins = [
+  "http://localhost:3000",
+  "https://recipe-mania-frontend.onrender.com", 
+];
+
+app.use(
+  cors({
+    origin: allowedOrigins, 
+    methods: ["GET", "POST", "PUT", "DELETE"], 
+    credentials: true, 
+  })
+);
 
 app.use(bodyParser.json());
 
 app.use("/api/auth", authRoutes);
-
 app.use("/api/recipes", authenticateToken, recipeRoutes);
 
 const PORT = process.env.PORT || 5000;
