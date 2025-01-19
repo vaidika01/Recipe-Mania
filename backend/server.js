@@ -12,15 +12,21 @@ const app = express();
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 const allowedOrigins = [
-  "http://localhost:3000",
-  "https://recipe-mania-frontend.onrender.com", 
+  'http://localhost:3000', 
+  'https://recipe-mania-frontend.onrender.com',
 ];
 
 app.use(
   cors({
-    origin: allowedOrigins, 
-    methods: ["GET", "POST", "PUT", "DELETE"], 
-    credentials: true, 
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+        return callback(null, true);
+      }
+      return callback(new Error('Not allowed by CORS'));
+    },
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Authorization', 'Content-Type'],
+    credentials: true,
   })
 );
 
