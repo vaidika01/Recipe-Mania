@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || "https://recipe-mania-backend.onrender.com/api",
+  baseURL:"https://recipe-mania-backend.onrender.com/api",
 });
 
 axiosInstance.interceptors.request.use(
