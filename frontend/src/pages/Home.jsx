@@ -91,10 +91,15 @@ const FeatureHighlights = styled.div`
   padding: 0;
   gap: 20px;
   max-width: 1200px;
+
+  @media (max-width: 768px) {
+    gap: 15px;
+    margin: 20px 15px;
+  }
 `;
 
 const Feature = styled.div`
-  width: calc(33.333% - 40px);
+  width: 30%;
   text-align: center;
   background-color: #fffaf4;
   padding: 20px;
@@ -109,7 +114,7 @@ const Feature = styled.div`
   }
 
   @media (max-width: 1024px) {
-    width: calc(50% - 40px);
+    width: 45%;
   }
 
   @media (max-width: 768px) {
@@ -152,6 +157,7 @@ const Dish = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
+    gap: 15px;
   }
 `;
 
